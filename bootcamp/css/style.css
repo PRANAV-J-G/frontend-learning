@@ -66,5 +66,40 @@ this is how id's are created in css and are rarely used these days  */
 
 div{
     border:2px solid black;
+    /* margin can be negative to create overlapping divs*/
+    margin-top: 0;
     margin-bottom: 1;    
+    padding-left: 1rem;
+    width: 50%;
+    background-color: beige;
+    background-image: url();
 }
+
+nav{
+    border: 5px dashed crimson;
+    width: fit-content;
+    border-radius :1em;
+}
+nav ul:hover{
+    list-style-type: none;
+    display: block;
+    background-color: azure;
+    border: 3px solid red;
+}
+
+nav li{
+    border: 2px solid aquamarine;
+    display: inline-block;
+}
+
+.floatleft{
+    float:left;
+    border: 5px solid brown;
+    /* top right bottom left order  */
+    /* unites can be mixed and matched */
+    margin : 0 1rem 1rem 0;
+    margin : 0 auto;    
+    flex-wrap : row nowrap; 
+    justify-content: flex-start; 
+}
+
