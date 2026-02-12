@@ -90,6 +90,7 @@ nav ul:hover{
 nav li{
     border: 2px solid aquamarine;
     display: inline-block;
+    flex-basis:10%;
 }
 
 .floatleft{
