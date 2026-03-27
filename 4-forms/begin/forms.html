@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<form>
+				<fieldset> 
+				<legend>Your contact information</legend>
+				<label for="fullname">Your name </label>
+					<input type="text" id="fullname" name="name" placeholder="Sample placeholder for name input">
+				<label for="phone">Phone number</label>
+				<input type="tel" id="phone" name="phone">
+				<p>Email</p>
+					<input type="email" id="email">
+				</fieldset>
+
+				<fieldset>
+			<legend>About your abduction </legend>
+			<label for="date">Requested  date</label>
+			<input type="date" id="date" name="date">
+			<label for="count">How many people would you like abducted?</label>
+			<input type="number" id="count" name="count" min="1" max="99"> 
+			<p>What type of UFO do you prefer?</p>
+				<ul>
+					<label > 
+					<input type="radio" name="ufotype" value="Classic" checked>Classic oval UFO</input>
+					</label>
+					<label>
+					<input type="radio"
+					name="ufotype"
+					value="Starwars">Star Wars-style Imperial cruiser</input>
+					</label>
+					<label>
+					<input type="radio"
+					name="ufotype"
+					value="Battlestar">Battlestar Galactica-style Viper</input>
+					</label>
+					<label>
+					<input type="radio" name="ufotype"
+					value="Borg">Borg-style cube</input>
+					</label>
+				</ul> 
+			<label for="abtype">What type of abduction experience do you want?</label>
+				<select id="abtype">
+					<option selected> Select one</option>
+					<option value="tour">Tour of the solar system</option>
+					<option value="dinner" selected>Alien dinner and discussion</option>
+					<option value="dance">Alien dance lessons</option>
+					<option value="whale">Whale watching</option>
+				</select>
+			<label for="comments">Special requests:
+			</label>
+			<textarea id="comments" name="comments" placeholder="Tell me anything"></textarea>
+			<label>
+			<input type="checkbox" value="subscribe" name="subscribe" id="subscribe" checked>
+			Add me to your email list </input> 
+			</label>
+				</textarea>
+				<button type="submit"> Submit </button>
+				</fieldset>
+			</form>				
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+		</aside>
+	</div>
+</body>
+</html>
+
+
+
+
+
