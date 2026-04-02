@@ -22,6 +22,7 @@ p,[for="abtype"] {
 	margin-bottom: 0;
 	margin-top: 2rem;
 }
+
 section {
 	flex-basis: 57%;
 	margin-right: 10%;
@@ -79,4 +80,8 @@ input:not([type="radio"]):not([type="checkbox"]),text,textarea,select{
 	font-size: 1rem;
 	padding: 0 1rem;
     border-radius: 10px;
+}
+
+p,h1,legend,label{
+	font-family:"Raleway",sans-serif;
 }
