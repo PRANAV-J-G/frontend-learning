@@ -14,3 +14,8 @@ const sentence = `Hello ${firstName} ${lastName}! How are you doing ?`;
 
 //instead of 
 const sentence1 = "Hello" + firstName + " " + lastName;
+
+// numbers - primitive type 
+// here there is no -ve , float , integers , they are all number 
+const num = 5; 
+console.log(num)
