@@ -19,3 +19,4 @@ const sentence1 = "Hello" + firstName + " " + lastName;
 // here there is no -ve , float , integers , they are all number 
 const num = 5; 
 console.log(num)
+

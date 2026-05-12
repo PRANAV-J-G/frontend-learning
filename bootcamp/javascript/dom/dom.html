@@ -1,0 +1,107 @@
+<!-- basic example  -->
+<!-- change the background color -->
+<style> 
+    .red-square{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+
+<div class="red-square"></div>
+
+<script>
+    const reqsquare = document.querySelector('.red-square');
+    reqsquare.style.backgroundColor = 'black';
+</script>
+
+
+<!-- loop over query  -->
+<ul>
+  <li class="js-target">Unchanged</li>
+  <li class="js-target">Unchanged</li>
+  <li>Won't Change</li>
+  <li class="js-target">Unchanged</li>
+  <li>Won't Change</li>
+  <li class="js-target">Unchanged</li>
+</ul>
+<script>
+  const elementsToChange = document.querySelectorAll('.js-target');
+  for (let i = 0; i < elementsToChange.length; i++) {
+    const currentElement = elementsToChange[i];
+    currentElement.innerText = "Modified by JavaScript!";
+  }
+</script>
+
+
+
+<!-- click event -->
+<button class="event-button"> Click the damn Button !!  </button>
+<style>
+    .event-button{ 
+        width: 100px;
+        height : 200px;
+    }
+</style>
+
+<script> 
+    const button = document.querySelector('.event-button')
+    button.addEventListener('click', function() {
+        alert("Hello there!!")
+    })
+</script>
+
+
+<!-- keyup event -->
+<input placeholder="type into me!" class="input-to-copy" />
+<p class="p-to-copy-to">Nothing has happened yet.</p>
+<script>
+  const input = document.querySelector('.input-to-copy');
+  const paragraph = document.querySelector('.p-to-copy-to');
+
+  input.addEventListener("keyup", function() {
+    paragraph.innerText  = input.value;
+  });
+</script>
+
+
+<!-- change event -->
+<style> 
+    .square{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+
+    }
+</style>
+
+<div class="square"></div>
+<input class="color-input" placeholder="Type a color over here" />
+<script>
+    const chat = document.querySelector('.color-input') 
+    const para = document.querySelector('.square')
+
+    chat.addEventListener('change',function(){
+        para.style.backgroundColor = chat.value;
+    });
+</script>
+
+
+<!-- Event delegation  -->
+ <!-- Events bubble up from level to level and then move from the element level to the div level and so on till the body level -->
+<div class = 'button-container'>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+</div>
+
+<script> 
+    document.querySelector('.button-container').addEventListener('click',function(event){
+        alert(`You have clicked on the button ${event.target.innerText}`)
+    })
+</script>
+
+
+
